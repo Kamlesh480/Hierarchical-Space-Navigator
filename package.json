@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:server": "cd server && node --watch index.js",
+    "install:server": "cd server && npm install",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

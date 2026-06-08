@@ -1,3 +1,138 @@
 {
-  "data": []
+  "sanJoseSpaces": [
+    {
+      "spaces": [
+        {
+          "id": 101,
+          "name": "Office Building",
+          "streams": [
+            { "id": 1001, "name": "Front Entrance" },
+            { "id": 1002, "name": "Lobby" },
+            { "id": 1003, "name": "Parking Lot" },
+            { "id": 1004, "name": "Elevator" },
+            { "id": 1005, "name": "Hallway 1" },
+            { "id": 1006, "name": "Hallway 2" },
+            { "id": 1007, "name": "Conference Room" }
+          ],
+          "parentSpaceId": null
+        },
+        {
+          "id": 102,
+          "name": "Warehouse",
+          "streams": [
+            { "id": 2001, "name": "Loading Bay" },
+            { "id": 2002, "name": "Storage Area A" },
+            { "id": 2003, "name": "Storage Area B" },
+            { "id": 2004, "name": "Shipping Desk" },
+            { "id": 2005, "name": "Inventory Room" },
+            { "id": 2006, "name": "Staff Entrance" }
+          ],
+          "parentSpaceId": null
+        }
+      ]
+    }
+  ],
+  "torontoSpaces": [
+    {
+      "spaces": [
+        {
+          "id": 2,
+          "name": "Marketing",
+          "streams": [
+            { "id": 1, "name": "Marketing Camera 1" },
+            { "id": 2, "name": "Marketing Camera 2" }
+          ],
+          "parentSpaceId": 1
+        },
+        {
+          "id": 1,
+          "name": "Main Building",
+          "streams": [
+            { "id": 3, "name": "Main Entrance" },
+            { "id": 4, "name": "Reception Desk" },
+            { "id": 5, "name": "Main Lobby" },
+            { "id": 6, "name": "Security Desk" }
+          ],
+          "parentSpaceId": null
+        }
+      ]
+    },
+    {
+      "spaces": [
+        {
+          "id": 3,
+          "name": "Executive Building",
+          "streams": [{ "id": 7, "name": "Executive Suite" }],
+          "parentSpaceId": 8
+        },
+        {
+          "id": 4,
+          "name": "Break Room",
+          "streams": [{ "id": 8, "name": "Cafeteria View" }],
+          "parentSpaceId": 3
+        },
+        {
+          "id": 5,
+          "name": "Conference Room A",
+          "streams": [{ "id": 9, "name": "Conference Room Front" }],
+          "parentSpaceId": 3
+        },
+        {
+          "id": 6,
+          "name": "Training Center",
+          "streams": [
+            { "id": 10, "name": "Training Room 1" },
+            { "id": 11, "name": "Training Room 2" }
+          ],
+          "parentSpaceId": 3
+        },
+        {
+          "id": 7,
+          "name": "Cafeteria",
+          "streams": [{ "id": 12, "name": "Dining Area" }],
+          "parentSpaceId": 3
+        },
+        {
+          "id": 9,
+          "name": "Storage Room",
+          "streams": [],
+          "parentSpaceId": 3
+        },
+        {
+          "id": 8,
+          "name": "Corporate Office",
+          "streams": [
+            { "id": 13, "name": "Main Hallway" },
+            { "id": 14, "name": "Elevator Lobby" },
+            { "id": 15, "name": "Reception" }
+          ],
+          "parentSpaceId": null
+        },
+        {
+          "id": 10,
+          "name": "Research Wing",
+          "streams": [{ "id": 16, "name": "Lab Camera" }],
+          "parentSpaceId": null
+        }
+      ]
+    },
+    {
+      "spaces": [
+        {
+          "id": 11,
+          "name": "Warehouse",
+          "streams": [
+            { "id": 17, "name": "Loading Dock 1" },
+            { "id": 18, "name": "Loading Dock 2" }
+          ],
+          "parentSpaceId": null
+        }
+      ]
+    }
+  ],
+  "availableSites": [
+    { "id": "1", "name": "San Jose" },
+    { "id": "2", "name": "Toronto" },
+    { "id": "3", "name": "Mars" }
+  ]
 }
