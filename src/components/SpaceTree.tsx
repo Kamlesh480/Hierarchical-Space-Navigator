@@ -61,7 +61,7 @@ export default function SpaceTree({
           <div className="tree">
             {tree.map((node) => (
               <SpaceNode
-                key={node.id}
+                key={node.id ?? node.name}
                 node={node}
                 depth={0}
                 selectedIds={selectedIds}

@@ -160,7 +160,9 @@ export function useSpaceNavigator() {
   const tree = useMemo(() => buildTree(spaces), [spaces]);
 
   const selectedStreams = useMemo(
-    () => spaces.flatMap((sp) => sp.streams).filter((s) => selectedStreamIds.has(s.id)),
+    () => spaces
+      .flatMap((sp) => sp.streams ?? [])
+      .filter((s) => s != null && selectedStreamIds.has(s.id)),
     [spaces, selectedStreamIds]
   );
 
